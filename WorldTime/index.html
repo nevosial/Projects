@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Clocks of the World</title>
+	<style>
+
+      body {
+        background-color: #cfd6e9;
+        color: #122;
+        font-family: helvetica, sans-serif;
+      }
+
+	    h1 {
+	        border-bottom: 1px solid #888;
+	        margin-bottom: 0.5em;
+	        padding-bottom: 0.5em;
+	    }
+
+	    #page {
+	        max-width: 43.75em;
+	        margin: 1em auto;
+	    }
+
+      #clockBerlin {
+        max-width: 43.75em;
+        margin: 1em auto;
+      }
+
+      #clockBerlin.label {
+        font-size: 76%;
+        text-transform: uppercase;
+        background: rgba(1, 0, 1, 1);
+        padding: 0.25em 1rem;
+      }
+
+      #current-time_b {
+        font-size: 70%;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+
+      }
+
+      #clockBerlin.label {
+        padding: 0.25em 0.5em;
+      }
+
+
+      #clock.label {
+        color: green;
+      }
+
+      #clock.label {
+        padding: 0.25em 0.5em;
+      }
+
+
+      #clock.label {
+        font-size: 76%;
+        text-transform: uppercase;
+        background: rgba(1, 0, 1, 1);
+        padding: 0.25em 1rem;
+      }
+
+      #current-time {
+        font-size: 70%;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+
+      }
+
+      #canvas{
+        width: 50em;
+        height: 20em;
+        margin: 1em auto;
+      }
+
+      #canvas{
+        font-size: 70%;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+      }
+
+
+	</style>
+</head>
+<body>
+
+<div id="page">
+	<h1>Clocks of the World</h1>
+  <div id="clock">
+              <div class="label">Time in India</div>
+              <div id="current-time"></div>
+  </div>
+  <canvas id="canvas"></canvas>
+</div>
+
+
+
+
+<div id="clockBerlin">
+  <div class="label">Time in London</div>
+  <div id="current-time_b"></div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
