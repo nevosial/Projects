@@ -71,7 +71,7 @@
 
       }
 
-      #canvas{
+			#canvas{
         width: 50em;
         height: 20em;
         margin: 1em auto;
@@ -84,6 +84,13 @@
         padding: 1rem;
       }
 
+			#mapspot {
+				width: 43.75em;
+				height: 20em;
+				margin: 1em auto;
+				background-color: grey;
+			}
+
 
 	</style>
 </head>
@@ -94,8 +101,11 @@
   <div id="clock">
               <div class="label">Time in India</div>
               <div id="current-time"></div>
-  </div>
-  <canvas id="canvas"></canvas>
+
+<!-- </div><canvas id="canvas"></canvas></div> -->
+
+</div>
+<div id="mapspot"></div>
 </div>
 
 <div id="clockBerlin">
@@ -104,5 +114,7 @@
 </div>
 
 <script src="script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=_KEY_&callback=initMap"</script>
+
 </body>
 </html>
