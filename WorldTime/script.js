@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 })();
 
+//map function
 function initMap() {
 
   var map = new google.maps.Map(document.getElementById('mapspot'), {
@@ -27,7 +28,7 @@ function initMap() {
   });
   //var latlong = {lat: 12.972442, lng: 77.580643};
   var marker = new google.maps.Marker({
-    positon: {lat: 12.972442, lng: 77.580643},
+    position: {lat: 12.972442, lng: 77.580643},
      map: map
   });
 
